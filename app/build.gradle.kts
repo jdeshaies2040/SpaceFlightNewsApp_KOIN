@@ -64,6 +64,11 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation("io.coil-kt:coil-compose:2.6.0")
 
+    // Koin for Android
+    implementation("io.insert-koin:koin-android:4.1.1")
+    // Koin for Jetpack Compose
+    implementation("io.insert-koin:koin-androidx-compose:4.1.1")
+
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)

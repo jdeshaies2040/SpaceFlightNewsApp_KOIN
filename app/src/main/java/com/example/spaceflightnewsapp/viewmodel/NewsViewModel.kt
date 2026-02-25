@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 // Manual constructor injection
 // TODO: Hilt DI
-class NewsViewModel(private val newsRepository: NewsRepository = NewsRepository()): ViewModel() {
+class NewsViewModel(private val newsRepository: NewsRepository): ViewModel() {
 
     private val _newsState = MutableLiveData<NewsState>(NewsState.Loading)
     val newsState: LiveData<NewsState> = _newsState

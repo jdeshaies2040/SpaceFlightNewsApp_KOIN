@@ -7,7 +7,7 @@ import kotlinx.coroutines.withContext
 
 // Manual constructor injection
 // TODO: Hilt DI
-class NewsRepository(private val api: NewsApi = RetrofitClient.api) {
+class NewsRepository(private val api: NewsApi) {
     suspend fun getNews(): Result<List<com.example.spaceflightnewsapp.model.Result>> = withContext(Dispatchers.IO){
         try {
             val response = api.getNews()
